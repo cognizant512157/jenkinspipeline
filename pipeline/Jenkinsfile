@@ -3,17 +3,17 @@ pipeline {
    stages {
      stage('Build'){
           steps{
-            sh 'touch file1'
+            sh 'mkdir dir3'
 }
 }
       stage('Test'){
           steps{
-            sh 'touch file2'
+            sh 'mkdir dir4'
 }
 }
       stage('Deploy') {
          steps{
-           sh 'touch file3'
+           sh 'mkdir dir5'
 }   
 }
 }
